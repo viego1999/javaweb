@@ -1,0 +1,6 @@
+announce:=127.0.0.1:=2020
+filename:=book(3).txt
+fileSize:=28B
+fileLength:=28
+blockMaxNum:=2
+validate:=2332fb70f705b300d0afccfa185ef83e

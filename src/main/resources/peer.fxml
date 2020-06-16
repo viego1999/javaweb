@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s17201321.controller.PeerController">
+   <ImageView fx:id="bg" fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" style="-fx-opacity: 100;">
+      <Image url="@static/bg.jpg" />
+   </ImageView>
+   <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="700.0" style="-fx-background-color: rgba(18,234,209,0.81)" text="P2P下载程序" textFill="#424322">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Button fx:id="o_bt" alignment="CENTER" layoutX="159.0" layoutY="371.0" mnemonicParsing="false" onAction="#onload" style="-fx-background-color: orange;-fx-cursor: hand" text="上传文件" textAlignment="JUSTIFY">
+      <textFill>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.4070540964603424" green="0.8289473652839661" blue="0.08442982286214828" opacity="0.9599999785423279" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill>
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+   <Button fx:id="nd_bt" layoutX="317.0" layoutY="371.0" mnemonicParsing="false" onAction="#normalDownload" style="-fx-background-color: orange;-fx-cursor: hand" text="普通下载">
+      <textFill>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.4070540964603424" green="0.8289473652839661" blue="0.08442982286214828" opacity="0.9599999785423279" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill>
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="bt_bt" layoutX="479.0" layoutY="371.0" mnemonicParsing="false" onAction="#btDownload" style="-fx-background-color: orange;-fx-cursor: hand" text="种子下载">
+      <textFill>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.4070540964603424" green="0.8289473652839661" blue="0.08442982286214828" opacity="0.9599999785423279" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill>
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Button>
+   <VBox fx:id="tfv" layoutX="421.0" layoutY="59.0" prefHeight="247.0" prefWidth="261.0" style="-fx-background-color: white;">
+      <children>
+         <Label prefHeight="22.0" prefWidth="261.0" style="-fx-background-color: rgba(0,255,115,0.95);-fx-font-weight: bold" text="种子文件目录" textFill="#9a0d0df0">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+      </children>
+   </VBox>
+   <VBox fx:id="sfv" layoutX="44.0" layoutY="59.0" prefHeight="247.0" prefWidth="261.0" style="-fx-background-color: white;">
+      <Label prefHeight="22.0" prefWidth="262.0" style="-fx-background-color: rgba(0,255,115,0.95);-fx-font-weight: bold" text="服务器端文件目录" textFill="#9a0d0df0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </VBox>
+</AnchorPane>

@@ -1,0 +1,6 @@
+announce:=127.0.0.1:=2020
+filename:=book1.txt
+fileSize:=28B
+fileLength:=28
+blockMaxNum:=0
+validate:=2a327fc65be12d25682d8b7f89ae6d73

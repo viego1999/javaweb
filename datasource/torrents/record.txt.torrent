@@ -1,0 +1,6 @@
+announce:=127.0.0.1:=2020
+filename:=record.txt
+fileSize:=32B
+fileLength:=32
+blockMaxNum:=0
+validate:=6a03115843156ccb1c13d312635e06c9
